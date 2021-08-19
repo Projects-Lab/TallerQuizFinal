@@ -1,0 +1,272 @@
+:root {
+  --azul-principal: green;
+  --blanco: #ffffff;
+  --azul-secundario: #95c4c7;
+}
+body {
+  margin: 0;
+  font-family: "Helvetica Neue",  sans-serif;
+  background-image: url(images/esta.png)
+
+
+}
+.Navbar {
+  padding: 2%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-color: green;
+  color: white;
+}
+.titulote {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 600px;
+}
+.usuario-nombre {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.contenedor {
+  margin: 100px;
+  max-width: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta {
+  display: none;
+  border:  solid var(--azul-principal);
+  margin:auto 40px;
+  padding: 20px;
+}
+.tarjeta-entrar {
+  width: 390px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 100px;
+}
+.formulario-entrar {
+  display: flex;
+  flex-direction: row;
+
+}
+.formulario-nombre {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  color: #065a60;
+}
+.etiqueta-nombre {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.campo-nombre {
+  
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid ;
+
+}
+
+.boton-entrar {
+  margin: 20px;
+  padding: 10px;
+  margin-top: 33px;
+  margin-left: 40px;
+  font-size: 20px;
+  border: 1px solid green;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tarjeta-pregunta {
+  width: 700px;
+  margin: auto;
+  margin-top: 30px;
+  min-height: 200px;
+  height: min-content;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.question-section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.botones-flechas {
+  display: flex;
+  flex-direction: row;
+  justify-content: inherit;
+}
+.botones-flechas button {
+
+margin-right: 265px;
+}
+
+.botones-flechas button {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flecha {
+  background-color: gray;
+}
+
+.finalizar {
+  background-color: green;
+  color: white;
+}
+.botones-flechas button:disabled {
+  background-color: rgb(214, 205, 205);
+  color: black;
+  border-color: rgb(214, 205, 205);
+
+}
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.answer-section button {
+  width: 100%;
+  font-size: 18px;
+  color: black;
+
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+
+  cursor: pointer;
+}
+.sin-responder {
+  background-color: gray;
+}
+.correct {
+  background-color: #2f922f;
+}
+.incorrect {
+  background-color: #ff3333;
+}
+.answer-section button:hover {
+  color: var(--blanco);
+  background-color: green;
+  border-color:black;
+}
+button:focus {
+  outline: none;
+}
+.tarjeta-numeros-pregunta {
+  display: flex;
+  width: 705px;
+  margin: auto;
+  margin-top: 30px;
+  min-height: 20px;
+  height: min-content;
+  border: 2px solid green;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.tarjeta-numeros-pregunta button {
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #065a60;
+  border-radius: 5px;
+}
+
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+
+.resultado-pregunta {
+  display: grid;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--azul-secundario);
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+
+.resultado-final {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 300px;
+  justify-content: space-between;
+}
+.cuadro {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px 100px;
+  margin-bottom: 15px;
+  margin-left: 200%;
+
+}
+.cuadro-bien {
+  background-color: #dae8da;
+  color: green;
+  border: 1px solid green;
+  
+}
+.cuadro-mal {
+  background-color: #efe2e2;
+  color: red;
+  border: 1px solid red;
+}
+.cuadro-t1 {
+  padding: 10px;
+  font-size: 2.5rem;
+
+}
+.cuadro-t2 {
+  font-size: 1.3rem;
+}
+.pie button {
+
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 365px;
+  background-color: rgb(0, 128, 49);
+  color: white;
+  border: 1px solid  green;
+
+}
